@@ -17,7 +17,7 @@ provider "aws" {
 }
 
 provider "github" {
-  token = "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"
+  token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 
 resource "github_repository" "myrepo" {
@@ -66,7 +66,7 @@ resource "aws_instance" "tf-docker-ec2" {
           chmod +x /usr/local/bin/docker-compose  
           mkdir -p /home/ec2-user/bookstore-api
           cd /home/ec2-user/bookstore-api          
-          TOKEN="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"
+          TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
           FOLDER="https://$TOKEN@raw.githubusercontent.com/furkanalp/bookstore-repo/main/"
           curl -s -o bookstore-api.py -L "$FOLDER"bookstore-api.py 
           curl -s -o Dockerfile -L "$FOLDER"Dockerfile 
